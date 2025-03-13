@@ -19,3 +19,12 @@ img.addEventListener("dblclick",() => {
 
 
 
+let cardbody = document.querySelectorAll(".card-body")
+cardbody.forEach(card => {
+card.addEventListener("mouseover",()=>{
+  card.style.backgroundColor ="rgb(59, 54, 54)"
+  card.style.color ="white"
+})
+
+});
+
