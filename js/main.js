@@ -1,37 +1,33 @@
- let style = document.createElement('style');
+let cards = document.querySelectorAll(".card");
 
- let cards = document.querySelectorAll(".card")
- cards.forEach(cards => {
-    cards.addEventListener('click',()=>{
-      cards.style.boxShadow = "10px 20px 30px rgb(0,0,0)";   
-     
-    })
-
-})
-
+cards.forEach(card => {
+    
+    card.addEventListener('click', () => {
+        card.style.boxShadow = "10px 20px 30px rgb(0,0,0)";   
+    });
 
     
-let img = cards.querySelector(".card-img-top")
-img.addEventListener("dblclick",() => {
-    cards.remove();
+    let img = card.querySelector(".card-img-top");
+    img.addEventListener("dblclick", () => {
+        card.remove(); 
+    });
 
-})
+   
+    let cardbody = card.querySelector(".card-body");
 
+    cardbody.addEventListener("mouseover", () => {
+        cardbody.style.backgroundColor = "rgb(59, 54, 54)";
+        cardbody.style.color = "white";
+    });
 
-
-let cardbody = document.querySelectorAll(".card-body")
-cardbody.forEach(card => {
-card.addEventListener("mouseover",()=>{
-  card.style.backgroundColor ="rgb(59, 54, 54)"
-  card.style.color ="white"
-})
-
+    cardbody.addEventListener("mouseout", () => {
+        cardbody.style.backgroundColor = "";
+        cardbody.style.color = "";
+    });
 });
 
-cardbody.forEach(card => {
-    card.addEventListener('mouseout',()=> {
-       card.style.backgroundColor= ""
-        card.style.color=""
-    })
-    })
-    
+
+let button = document.querySelector(".newsletter");
+button.addEventListener('click', () => {
+    alert("L'adresse est inscrite à la newsletter");
+});
