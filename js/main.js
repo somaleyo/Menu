@@ -11,3 +11,11 @@
 
 
     
+let img = cards.querySelector(".card-img-top")
+img.addEventListener("dblclick",() => {
+    cards.remove();
+
+})
+
+
+
