@@ -37,3 +37,11 @@ btn[0].addEventListener("click",() => {
     window.location.href= "page/Couscous.html"
 });
 
+btn[1].addEventListener("click",() => {
+    window.location.href= "page/Pizza.html"
+});
+
+btn[2].addEventListener("click",() => {
+    window.location.href= "page/Poulet.html"
+});
+console.log(btn[2])
