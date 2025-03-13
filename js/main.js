@@ -31,3 +31,9 @@ let button = document.querySelector(".newsletter");
 button.addEventListener('click', () => {
     alert("L'adresse est inscrite à la newsletter");
 });
+
+let btn = document.querySelectorAll(".btn")
+btn[0].addEventListener("click",() => {
+    window.location.href= "page/Couscous.html"
+});
+
