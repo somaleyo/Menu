@@ -28,3 +28,10 @@ card.addEventListener("mouseover",()=>{
 
 });
 
+cardbody.forEach(card => {
+    card.addEventListener('mouseout',()=> {
+       card.style.backgroundColor= ""
+        card.style.color=""
+    })
+    })
+    
